@@ -43,10 +43,10 @@ RUN echo "c.NotebookApp.ip = '*'" \
 EXPOSE 8888
 
 #
-# Tensorflow 0.12.1 - CPU
+# Tensorflow 1.0 - CPU
 #
 RUN pip3 install --no-cache-dir --upgrade \
-    https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp35-cp35m-linux_x86_64.whl
+	https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.0-cp35-cp35m-linux_x86_64.whl
 
 # Expose port for TensorBoard
 EXPOSE 6006
